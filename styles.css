@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7ff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* CARD */
+.todo-card {
+  background: #fff;
+  max-width: 450px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* TOP */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+/* DESCRIPTION */
+p {
+  margin: 10px 0;
+  color: #555;
+}
+
+/* BADGES */
+.meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.high {
+  background: #ffe5e5;
+  color: #d00;
+}
+
+/* STATUS */
+.status {
+  font-size: 12px;
+  background: #eef;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* TIME */
+#timeRemaining {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+  list-style: none;
+}
+
+.tags li {
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:last-child {
+  background: #ff4d4d;
+}
+
+/* COMPLETED */
+.completed h2 {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* FOCUS (ACCESSIBILITY) */
+button:focus,
+input:focus {
+  outline: 2px solid #000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
